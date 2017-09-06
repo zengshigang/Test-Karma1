@@ -34,10 +34,11 @@ module.exports = function(config) {
     reporters: ['progress','junit','coverage'],
 
     coverageReporter:{
-        type:'html',
+        type:'cobertura',
         dir:'coverage'
     },
     junitReporter: {
+      outputDir: "junit",
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
     },
