@@ -25,7 +25,7 @@ module.exports = function(config) {
       'karma-junit-reporter',
       'karma-coverage'
     ],
-    browserNoActivityTimeout:10000,
+    /*browserNoActivityTimeout:10000,*/
 
     preprocessors: {
         'view*/**/*.js':'coverage'
@@ -40,7 +40,8 @@ module.exports = function(config) {
     junitReporter: {
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
-    }
+    },
+    singleRun:true
 
   });
 };
