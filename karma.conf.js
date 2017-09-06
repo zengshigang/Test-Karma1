@@ -25,7 +25,7 @@ module.exports = function(config) {
       'karma-junit-reporter',
       'karma-coverage'
     ],
-
+    browserNoActivityTimeout:10000,
 
     preprocessors: {
         'view*/**/*.js':'coverage'
